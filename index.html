@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Hi, I'm <span>Bruno</span></h1>
+            <p>Welcome to my Portfolio Generator</p>
+        </div>
+        <img id="brunoProfile" src="Screenshot_2025-02-05_at_06.42.05-removebg-preview.png" alt="Profile Picture">
+    </header>
+
+    <div class="divider"></div>
+
+    <section class="portfolio-intro">
+        <p>Your portfolio could be just as impressive as mine 🐶!!</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="default-portfolio">
+        <h2>About Me</h2>
+        <div class="about">
+            <img id="brunoAbout" src="Screenshot 2025-02-05 at 05.20.59.jpg" alt="Profile Picture">
+            <p>Hey, I’m Bruno, the black pug with a big heart and an even bigger appetite. I’m a pro napper, snack hunter, and cuddle champion. When I’m not guarding the house from the mailman, I’m busy making everyone laugh with my squishy face. I might not be a tech whiz, but I sure know how to relax and enjoy life!</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Napping Expert</li>
+            <li>Snack Hunter</li>
+            <li>Tail Chasing Pro</li>
+            <li>Cuddle Champion</li>
+            <li>The Cutest😎</li>
+        </ul>
+    </section>
+
+    <section class="default-portfolio">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="book">
+                <div class="cover">Project 1 - The Great Doggie Escape</div>
+                <p>Bruno's daring adventure to sneak past the hoomans and escape into the yard!</p>
+            </div>
+            <div class="book">
+                <div class="cover">Project 2 - Nap Optimization Project</div>
+                <p>A deep study into maximizing comfort and minimizing interruptions during naps.</p>
+            </div>
+            <div class="book">
+                <div class="cover">Project 3 - Barking Security System</div>
+                <p>A top-notch security alert system that detects any suspicious movements outside!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="contact-details">
+                <p><strong>Email:</strong> bruno.email@example.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Pug Lane, Dogtown, USA</p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/brunoprofile" target="_blank">linkedin.com/in/brunoprofile</a></p>
+            </div>
+            <div class="contact-image">
+                <img src="Screenshot 2025-02-05 at 05.20.59.jpg" alt="Bruno the Pug">
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="divider"></div>
+
+    <section class="portfolio-intro">
+        <p>Did you like Bruno’s portfolio? 🐾</p>
+        <p>If you want your very own unique portfolio, fill in your details below and generate one that reflects your personality and skills!</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- User Input Form -->
+    <section class="default-portfolio form-section">
+        <h2>Create Your Portfolio</h2>
+        <div class="form-container">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" placeholder="Write something about yourself..."></textarea>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="E.g. Coding, Designing, Writing">
+
+            <label for="projects">Projects (comma-separated):</label>
+            <input type="text" id="projects" placeholder="E.g. Project A, Project B">
+            
+            <label for="project-overviews">Project Overviews (comma-separated, in order):</label>
+            <input type="text" id="project-overviews" placeholder="E.g. Overview A, Overview B">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" id="linkedin" placeholder="Your LinkedIn Profile">
+
+            <label for="phone">Phone No.:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+
+            <label for="imageUpload">Upload Profile Picture:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <img id="previewImage" src="" alt="Uploaded Image Preview" style="max-width: 150px; display: none;">
+
+            <button onclick="generatePortfolio()">Generate Portfolio</button>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Placeholder for Generated Portfolio -->
+    <div id="new-portfolio"></div>
+
+    <footer>
+        <p>&copy; 2025 Portfolio Generator. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
